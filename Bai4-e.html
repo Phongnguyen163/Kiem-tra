@@ -23,9 +23,15 @@
                 if (A === B && A === C) {
                     document.getElementById('H').innerHTML = "Đây là tam giác đều";
                 }
+                else if (A*A + B*B === C*C || B*B+ C*C ===  A*A || A*A + C*C === B*B) {
+                    document.getElementById('H').innerHTML = "Đây là tam giác vuông cân";
+                }
                 else {
                     document.getElementById('H').innerHTML = "Đây là tam giác cân";
                 }
+            }
+            else if (A*A + B*B === C*C || B*B+ C*C ===  A*A || A*A + C*C === B*B) {
+                document.getElementById('H').innerHTML = "Đây là tam giác vuông";
             }
             else {
                 document.getElementById('H').innerHTML = "Đây là tam giác thường";
