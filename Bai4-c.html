@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập a" id="s1">
+<input type="text" placeholder="Nhập b" id="s2">
+<button onclick="Tinh()">Click</button>
+<p id="Td"></p>
+<script>
+  function Tinh() {
+    let a = document.getElementById('s1').value;
+    let b = document.getElementById('s2').value;
+    let A = parseInt(a);
+    let B = parseInt(b);
+    let C = B-A+1;
+    let S = (A+B)*C/2;
+    document.getElementById('Td').innerHTML= "Tổng các số từ a đến b là: " + S;
+  }
+</script>
+</body>
+</html>

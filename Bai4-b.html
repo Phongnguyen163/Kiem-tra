@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập a" id="s1">
+<input type="text" placeholder="Nhập b" id="s2">
+<button onclick="Tinh()">Click</button>
+<p id="Bpa"></p>
+<p id="Bpb" ></p>
+<script>
+    function Tinh() {
+        let a = document.getElementById('s1').value;
+        let b = document.getElementById('s2').value;
+        let C = a * a;
+        let S = Math.pow(a, b);
+        document.getElementById('Bpa').innerHTML="Bình phương của a là: " + C;
+        document.getElementById('Bpb').innerHTML="Kết quả a^b là: " + S;
+    }
+</script>
+</body>
+</html>
